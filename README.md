@@ -21,6 +21,8 @@ Bundler : Webpack
 https://github.com/lambertnicolas Nicolas Lambert
 https://github.com/allaseau Dylan Allart
 ```
+## Link
+[https://lambertnicolas.github.io/character-manager-js/](https://lambertnicolas.github.io/character-manager-js/)
 
 ## Features
 
