@@ -21,6 +21,8 @@ Bundler : Webpack
 https://github.com/lambertnicolas Nicolas Lambert
 https://github.com/allaseau Dylan Allart
 ```
+## Link
+[https://lambertnicolas.github.io/character-manager-js/](https://lambertnicolas.github.io/character-manager-js/)
 
 ## Features
 
@@ -30,3 +32,7 @@ https://github.com/allaseau Dylan Allart
 - Il est possible de modifier supprimer un personnage
 - Lorsque l'on veut supprimer un personnage, un modal apparait pour confirmer la suppression
 - La recherche de pesonnage dans le header s'effectue avec un clic sur le bouton search ou la touche "enter"
+
+![img1](/src/img/character-manager.jpg)
+![img2](/src/img/character-manager2.jpg)
+![img2](/src/img/character-manager3.jpg)
