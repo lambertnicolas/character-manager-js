@@ -1,3 +1,5 @@
+import { display } from "./modules/display.js";
+
 const charachterList = document.querySelector("#characterlist");
 const addCharachter = document.querySelector("#addcharacter");
 const modifyCharachter = document.querySelector("#modifycharacter");
@@ -5,7 +7,6 @@ const viewMore = document.querySelector("#viewmore");
 const searchPage = document.querySelector("#search");
 
 //Fonctions :
-
 //Fonction listDisplay :
 const listDisplay = (table) => {
   table.forEach((element, index) => {
@@ -17,8 +18,8 @@ const listDisplay = (table) => {
     }
     newLi.innerHTML = `<div><h3>${
       element.name
-    }</h3><img src="data:image/png;base64,${
-      element.image
+    }</h3><img src="data:image/png;base64,${element.image}" alt="${
+      element.name
     }"><p>${element.shortDescription.substring(
       0,
       56
@@ -26,7 +27,6 @@ const listDisplay = (table) => {
     charachterList.appendChild(newLi);
   });
 };
-
 //Fonction characterDisplay :
 const characterDisplay = (arr) => {
   //Vérfier si un id existe dans l'url
@@ -36,12 +36,13 @@ const characterDisplay = (arr) => {
   if (id !== null) {
     arr.forEach((element) => {
       if (element.id === id) {
+        //display("none", "none", "block", "none", "none");
         charachterList.style.display = "none";
         addCharachter.style.display = "none";
         const viewmore = document.querySelector("#viewmore");
         viewmore.style.display = "revert";
         let newLi = document.createElement("li");
-        newLi.innerHTML = `<div id="chardisplay"><h2>${element.name}</h2><img src="data:image/png;base64,${element.image}"><p>${element.shortDescription}</p><p>${element.description}</p></div>`;
+        newLi.innerHTML = `<div id="chardisplay"><h2>${element.name}</h2><img src="data:image/png;base64,${element.image}" alt="${element.name}"><p>${element.shortDescription}</p><p>${element.description}</p></div>`;
         viewmore.appendChild(newLi);
       }
     });
@@ -81,7 +82,7 @@ axios
       });
     });
 
-    //Executer openWeather quand on tape sur la touche entrée
+    //Executer la recherche quand on tape sur la touche entrée
     const keyPress = () => {
       input.addEventListener("keypress", function (event) {
         // If the user presses the "Enter" key on the keyboard

@@ -217,6 +217,8 @@ body main #content ul .lipair div h3 {
 }
 body main #content ul .lipair div img {
   border-radius: 5px;
+  width: 120px;
+  height: 120px;
 }
 body main #content ul .lipair div p {
   padding: 10px;
@@ -248,6 +250,8 @@ body main #content ul .liimpair div h3 {
 }
 body main #content ul .liimpair div img {
   border-radius: 5px;
+  width: 120px;
+  height: 120px;
 }
 body main #content ul .liimpair div p {
   padding: 10px;
@@ -260,6 +264,9 @@ body main #content ul .liimpair div a {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 8px;
+}
+body main section#modifycharacter {
+  display: none;
 }
 body main section#modifycharacter a {
   height: 18px;
@@ -401,6 +408,7 @@ body main section#viewmore li div h2 {
 }
 body main section#viewmore li div img {
   width: 120px;
+  height: 120px;
   margin-bottom: 30px;
 }
 body main section#viewmore li div p {
@@ -477,6 +485,7 @@ body main section#search div div#chardisplay h2 {
 }
 body main section#search div div#chardisplay img {
   width: 120px;
+  height: 120px;
   margin-bottom: 30px;
 }
 body main section#search div div#chardisplay p {

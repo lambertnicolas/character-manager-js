@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Comics character manager" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,7 +73,7 @@
         </div>
       </section>
       <!--Section modifier-->
-      <section id="modifycharacter" style="display: none">
+      <section id="modifycharacter">
         <a href="">Back</a>
         <form class="modifyform">
           <h2>Modify character</h2>
@@ -81,7 +82,7 @@
           Short description :
           <input type="text" id="shortdescmodify" /><br />
           Description :
-          <textarea type="text" id="descriptionmodify"></textarea><br />
+          <textarea id="descriptionmodify"></textarea><br />
           Picture :
           <input
             type="file"
@@ -107,11 +108,7 @@
           </div>
           <div>
             Description :
-            <textarea
-              type="text"
-              placeholder="Description"
-              id="description"
-            ></textarea>
+            <textarea placeholder="Description" id="description"></textarea>
           </div>
           <div>
             Picture :

@@ -224,6 +224,8 @@ body {
             }
             img {
               border-radius: 5px;
+              width: 120px;
+              height: 120px;
             }
             p {
               padding: 10px;
@@ -255,6 +257,8 @@ body {
             }
             img {
               border-radius: 5px;
+              width: 120px;
+              height: 120px;
             }
             p {
               padding: 10px;
@@ -274,6 +278,7 @@ body {
     }
     section {
       &#modifycharacter {
+        display: none;
         a {
           height: 18px;
           width: 40px;
@@ -414,6 +419,7 @@ body {
             }
             img {
               width: 120px;
+              height: 120px;
               margin-bottom: 30px;
             }
             p {
@@ -493,6 +499,7 @@ body {
               }
               img {
                 width: 120px;
+                height: 120px;
                 margin-bottom: 30px;
               }
               p {

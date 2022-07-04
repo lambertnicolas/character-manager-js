@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 let config = {
   mode: "development",
@@ -8,6 +9,7 @@ let config = {
     path: path.resolve(__dirname, "./dist"),
     filename: "./bundle.js",
   },
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -22,6 +24,10 @@ let config = {
           // Compile le Sass en CSS
           "sass-loader",
         ],
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
